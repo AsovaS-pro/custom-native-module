@@ -21,7 +21,7 @@ public class RNCustomNativeModuleModule extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-   public void sqrNumber(Int number, Callback cb) {
+   public void sqrNumber(int number, Callback cb) {
        try{
            cb.invoke(null, (number * number));
        }catch (Exception e){
